@@ -1,9 +1,21 @@
+@font-face {
+    font-family: "PassionOne";
+    src: url("./PassionOne-Regular.woff2");
+}
+
+@font-face {
+    font-family: "Fira Sans";
+    src: url("./FiraSans-Regular.woff2");
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
+    background-image: url("./pexels-kunal-lakhotia-781256899-29173121.jpg");
+    background-size: 100vw 100vh;
     display: grid;
     grid-template-rows: 3fr 9fr;
     height: 100vh;
@@ -11,6 +23,30 @@ body {
     background-color: rgb(32, 32, 32);
 }
 
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    color: white;
+    font-size: 84px;
+    font-family: "PassionOne", Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 5px;
+    text-shadow: 5px 5px 10px black;
+    position: relative;
+    top: 220px;
+}
+
+.headingPhrase {
+    color: white;
+    font-size: 28px;
+    font-family: "Fira-Sans", Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 10px 10px 30px black;
+    position: relative;
+    top: 220px;
+}
 nav {
     height: min(100%, 75px);
     grid-row: 1/2;
