@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "PassionOne";
-    src: url("./PassionOne-Regular.woff2");
+    font-family: "PlayFair-Display";
+    src: url("./PlayfairDisplay-VariableFont_wght.woff2");
 }
 
 @font-face {
@@ -14,13 +14,14 @@
 }
 
 body {
-    background-image: url("./pexels-kunal-lakhotia-781256899-29173121.jpg");
+    background-image:  linear-gradient(to bottom, transparent 0% 50%, rgba(39, 19, 0, 1) 95% 100%), url("./pexels-kunal-lakhotia-781256899-29173121.jpg");
     background-size: 100vw 100vh;
     display: grid;
     grid-template-rows: 3fr 9fr;
     height: 100vh;
     width: 100vw;
     background-color: rgb(32, 32, 32);
+    font-family: "Fira Sans", Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .content {
@@ -32,8 +33,7 @@ body {
 .title {
     color: white;
     font-size: 84px;
-    font-family: "PassionOne", Verdana, Geneva, Tahoma, sans-serif;
-    letter-spacing: 5px;
+    font-family: "PlayFair-Display", 'Times New Roman', Times, serif;
     text-shadow: 5px 5px 10px black;
     position: relative;
     top: 220px;
@@ -42,8 +42,7 @@ body {
 .headingPhrase {
     color: white;
     font-size: 28px;
-    font-family: "Fira-Sans", Verdana, Geneva, Tahoma, sans-serif;
-    text-shadow: 10px 10px 30px black;
+    text-shadow: 20px 20px 70px black;
     position: relative;
     top: 220px;
 }
@@ -68,4 +67,18 @@ button {
 button:hover {
     cursor: pointer;
     background-color: rgb(163, 0, 0);
+}
+
+.bookButton {
+    padding: 20px 20px;
+    background-color: rgb(163, 0, 0);
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(39, 19, 0, 1);
+    position: relative;
+    top: 250px;
+}
+
+.credits {
+    color: grey;
+    font-size: 12px;
 }
