@@ -1,5 +1,8 @@
 import "./styles.css"
+import { contact } from "./contact.js"
 
+
+const content = document.querySelector(".content");
 const home = (() => {
     const title = document.createElement("h1");
     title.classList.add("title");
@@ -17,3 +20,18 @@ const home = (() => {
 
     return { title, headingPhrase, buttonDiv }
 })();
+
+function setUpHome() {
+    content.appendChild(home.title);
+    content.appendChild(home.headingPhrase);
+    content.appendChild(home.buttonDiv);
+}
+
+function setUpContact() {
+    content.replaceChildren();
+    content.appendChild(contact.outerDiv);
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    setUpContact();
+});
