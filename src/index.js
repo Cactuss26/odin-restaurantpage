@@ -22,6 +22,7 @@ const home = (() => {
 })();
 
 function setUpHome() {
+    content.replaceChildren();
     content.appendChild(home.title);
     content.appendChild(home.headingPhrase);
     content.appendChild(home.buttonDiv);
@@ -33,5 +34,12 @@ function setUpContact() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    setUpContact();
+    const homeButton = document.querySelector("#home");
+    const menuButton = document.querySelector("#menu");
+    const contactButton = document.querySelector("#contact");
+
+    homeButton.addEventListener("click", setUpHome);
+    contactButton.addEventListener("click", setUpContact);
+
+    setUpHome();
 });
