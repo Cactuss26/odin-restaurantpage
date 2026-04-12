@@ -43,8 +43,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const menuButton = document.querySelector("#menu");
     const contactButton = document.querySelector("#contact");
 
-    // homeButton.addEventListener("click", setUpHome);
-    // contactButton.addEventListener("click", setUpContact);
-
-    setUpMenu();
+    homeButton.addEventListener("click", setUpHome);
+    menuButton.addEventListener("click", setUpMenu);
+    contactButton.addEventListener("click", setUpContact);
+    
+    setUpHome();
 });
