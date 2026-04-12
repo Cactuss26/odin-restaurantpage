@@ -38,8 +38,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const menuButton = document.querySelector("#menu");
     const contactButton = document.querySelector("#contact");
 
-    homeButton.addEventListener("click", setUpHome);
-    contactButton.addEventListener("click", setUpContact);
+    // homeButton.addEventListener("click", setUpHome);
+    // contactButton.addEventListener("click", setUpContact);
 
-    setUpHome();
+    setUpContact();
 });
