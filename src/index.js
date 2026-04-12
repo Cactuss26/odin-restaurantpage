@@ -1,6 +1,6 @@
 import "./styles.css"
 import { contact } from "./contact.js"
-
+import { menu } from "./menu.js"
 
 const content = document.querySelector(".content");
 const home = (() => {
@@ -33,6 +33,11 @@ function setUpContact() {
     content.appendChild(contact.outerDiv);
 }
 
+function setUpMenu() {
+    content.replaceChildren();
+    content.appendChild(menu.containerDiv);
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     const homeButton = document.querySelector("#home");
     const menuButton = document.querySelector("#menu");
@@ -41,5 +46,5 @@ document.addEventListener("DOMContentLoaded", () => {
     // homeButton.addEventListener("click", setUpHome);
     // contactButton.addEventListener("click", setUpContact);
 
-    setUpContact();
+    setUpMenu();
 });
